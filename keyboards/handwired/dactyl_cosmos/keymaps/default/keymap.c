@@ -14,6 +14,8 @@
 #define KC_MB1 KC_MS_BTN1
 #define KC_MB2 KC_MS_BTN2
 
+#define PERMISSIVE_HOLD
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,         KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,
