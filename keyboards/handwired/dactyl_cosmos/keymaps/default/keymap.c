@@ -35,12 +35,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    _______,  _______,      _______, TO(2)
     ),
     [2] = LAYOUT(
-        KC_ESC,  KC_Q,    KC_W,    KC_E,     KC_R,         _______, _______, _______, _______, _______,
- KC_LEFT_SHIFT,  KC_A,    KC_S,    KC_D,     KC_F,         _______, _______, _______, _______, _______,
-        _______, _______, _______, KC_V,     KC_B,         _______, _______, _______, _______, _______,
-                 KC_T,    KC_G,                                              _______, _______,
-                    KC_LEFT_SHIFT, KC_SPC,   _______,      _______, _______, _______,
-                             KC_LEFT_CTRL,   MO(3),        _______, TO(0)
+        KC_ESC,  KC_Q,    KC_W,    KC_E,     KC_R,         KC_T, KC_Y, KC_U,    KC_I,   KC_O,
+ KC_LEFT_SHIFT,  KC_A,    KC_S,    KC_D,     KC_F,         KC_G, KC_H, KC_J,    KC_K,   KC_L,
+        _______, _______, _______, KC_V,     KC_B,         KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
+                 KC_P,    KC_G,                                                 _______, _______,
+
+                 KC_LEFT_SHIFT, KC_SPC, KC_LEFT_ALT,       _______, _______, _______,
+                                KC_LEFT_CTRL,MO(3),        _______, TO(0)
     ),
     [3] = LAYOUT(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,     KC_F5,        KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
