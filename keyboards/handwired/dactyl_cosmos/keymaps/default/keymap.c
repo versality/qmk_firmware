@@ -27,11 +27,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    MO(1),    LSA(KC_NO),   KC_LGUI, OSL(3)
     ),
     [1] = LAYOUT(
-        _______, M_PREV,  KC_MU,   M_NEXT,   _______,      KC_HOME, KC_PAGE_DOWN, KC_PAGE_UP, KC_END,  KC_CAPS,
+        QK_BOOT, M_PREV,  KC_MU,   M_NEXT,   _______,      KC_HOME, KC_PAGE_DOWN, KC_PAGE_UP, KC_END,  KC_CAPS,
         _______, KC_ML,   KC_MD,   KC_MR,    _______,      KC_LEFT, KC_DOWN,      KC_UP,      KC_RGHT, _______,
-        _______, _______, _______, _______,  _______,      KC_GRV,  KC_SLSH,      KC_BSLS,    KC_QUES, KC_PIPE,
+        _______, _______, KC_MB2,  KC_MB1,   _______,      KC_GRV,  KC_SLSH,      KC_BSLS,    KC_QUES, KC_PIPE,
                  _______, _______,                                                KC_MB1,     KC_MB2,
-                          QK_BOOT, _______,  _______,      _______, _______, _______,
+                          _______, _______,  _______,      _______, _______, _______,
                                    _______,  _______,      _______, TO(2)
     ),
     [2] = LAYOUT(
