@@ -3,7 +3,7 @@
 #define SFT_ESC  SFT_T(KC_ESC)
 #define CTL_BSPC CTL_T(KC_BSPC)
 #define ALT_SPC  ALT_T(KC_SPC)
-#define SFT_ENT  SFT_T(KC_ENT)
+#define SFT_ENT  RSFT_T(KC_ENT)
 #define M_NEXT   KC_MEDIA_NEXT_TRACK
 #define M_PREV   KC_MEDIA_PREV_TRACK
 
@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_LBRC, KC_RBRC,                                           KC_MINS, KC_EQL,
 
                           SFT_ESC, CTL_BSPC, KC_TAB,       KC_DEL,  ALT_SPC, SFT_ENT,
-                                   MO(1),    LSA(KC_NO),   KC_LGUI, OSL(3)
+                                   MO(1),    OSL(4),       KC_LGUI, OSL(4)
     ),
     [1] = LAYOUT(
         QK_BOOT, M_PREV,  KC_MU,   M_NEXT,   _______,      KC_HOME, KC_PAGE_DOWN, KC_PAGE_UP, KC_END,  KC_CAPS,
@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, KC_MB2,  KC_MB1,   _______,      KC_GRV,  KC_SLSH,      KC_BSLS,    KC_QUES, KC_PIPE,
                  _______, _______,                                                KC_MB1,     KC_MB2,
                           _______, _______,  _______,      _______, _______, _______,
-                                   _______,  _______,      _______, TO(2)
+                                   _______,  _______,      TO(3),   TO(2)
     ),
     [2] = LAYOUT(
         KC_ESC,  KC_Q,    KC_W,    KC_E,     KC_R,         KC_T, KC_Y, KC_U,    KC_I,   KC_O,
@@ -41,9 +41,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_P,    KC_G,                                                 _______, _______,
 
                  KC_LEFT_SHIFT, KC_SPC, KC_LEFT_ALT,       _______, _______, _______,
-                                KC_LEFT_CTRL,MO(3),        _______, TO(0)
+                                KC_LEFT_CTRL,MO(4),        _______, TO(0)
     ),
     [3] = LAYOUT(
+        KC_Y,    KC_P,    KC_O,    KC_U,     KC_J,         KC_K,    KC_D,    KC_L,    KC_C,    KC_W,
+        KC_I,    KC_N,    KC_E,    KC_A,     KC_COMM,      KC_M,    KC_H,    KC_T,    KC_S,    KC_R,
+        KC_Q,    KC_Z,    KC_SLSH, KC_DOT,   KC_SCLN,      KC_B,    KC_F,    KC_G,    KC_V,    KC_X,
+                 KC_LBRC, KC_RBRC,                                           KC_MINS, KC_EQL,
+
+                          SFT_ESC, CTL_BSPC, KC_TAB,       KC_DEL,  ALT_SPC, SFT_ENT,
+                                KC_LEFT_CTRL,MO(4),        _______, TO(0)
+    ),
+    [4] = LAYOUT(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,     KC_F5,        KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
         KC_1,    KC_2,    KC_3,    KC_4,      KC_5,         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,
         KC_EXLM, KC_AT,   KC_HASH, KC_DLR,    KC_PERC,      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,
