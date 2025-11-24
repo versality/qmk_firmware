@@ -19,7 +19,7 @@
     },
     "split": {
         "enabled": true,
-        "soft_serial_pin": "GP0"
+        "soft_serial_pin": "GP1"
         "serial": {
             "driver": "vendor"
         }
