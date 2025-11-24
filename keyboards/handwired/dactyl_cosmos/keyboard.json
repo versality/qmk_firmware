@@ -19,7 +19,7 @@
     },
     "split": {
         "enabled": true,
-        "soft_serial_pin": "GP1"
+        "soft_serial_pin": "GP2",
         "serial": {
             "driver": "vendor"
         }
@@ -74,22 +74,19 @@
                 {"matrix": [8, 2], "x": 10, "y": 3},
                 {"matrix": [8, 3], "x": 11, "y": 3},
 
-                // Left thumb cluster (top row) - WORKING, DO NOT CHANGE
-                {"matrix": [3, 3], "x": 3, "y": 4},  // SFT_ESC
-                {"matrix": [3, 4], "x": 4, "y": 4},  // CTL_BSPC
-                {"matrix": [4, 2], "x": 5, "y": 4},  // KC_TAB
+                {"matrix": [3, 3], "x": 3, "y": 4},
+                {"matrix": [3, 4], "x": 4, "y": 4},
+                {"matrix": [4, 2], "x": 5, "y": 4},
 
-                {"matrix": [9, 2], "x": 9, "y": 4},  // DELETE!!
-                {"matrix": [8, 0], "x": 8, "y": 4},  // SPACE!!
-                {"matrix": [8, 1], "x": 7, "y": 4},  // ENTER!!
+                {"matrix": [9, 2], "x": 9, "y": 4},
+                {"matrix": [8, 0], "x": 8, "y": 4},
+                {"matrix": [8, 1], "x": 7, "y": 4},
 
-                // Left thumb cluster (bottom row) - WORKING, DO NOT CHANGE
-                {"matrix": [4, 3], "x": 4, "y": 5},  // MO(1)
-                {"matrix": [4, 1], "x": 5, "y": 5},  // LSA(KC_NO)
+                {"matrix": [4, 3], "x": 4, "y": 5},
+                {"matrix": [4, 1], "x": 5, "y": 5},
 
-                // Right thumb cluster (bottom row)
-                {"matrix": [9, 3], "x": 8, "y": 5},  // OSL!
-                {"matrix": [9, 1], "x": 7, "y": 5}   // DEL!
+                {"matrix": [9, 3], "x": 8, "y": 5},
+                {"matrix": [9, 1], "x": 7, "y": 5}
             ]
         }
     }
