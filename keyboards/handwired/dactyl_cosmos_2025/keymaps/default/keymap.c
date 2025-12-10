@@ -1,5 +1,3 @@
-#include QMK_KEYBOARD_
-
 #include QMK_KEYBOARD_H
 
 #define SFT_ESC  SFT_T(KC_ESC)
@@ -24,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,   QK_BOOT, _______, _______, _______, _______,      KC_HOME, KC_PAGE_DOWN, KC_PAGE_UP, KC_END,  KC_CAPS, _______,
     _______,   _______, M_PREV,  M_PLAY,  M_NEXT,  _______,      KC_LEFT, KC_DOWN,      KC_UP,      KC_RGHT, _______, _______,
     _______,   _______, _______, _______, _______, _______,      _______, _______,      _______,    KC_QUES, KC_PIPE, _______,
-               _______, _______, _______, _______,                        _______,      _______,    KC_MB1,  KC_MB2,
+               _______, _______, _______, _______,                        _______,      _______,    _______, _______,
                         _______, _______, _______,                        _______,      _______,    TO(2)
     ),
     [2] = LAYOUT(
