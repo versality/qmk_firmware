@@ -8,14 +8,12 @@
 #define M_PREV   KC_MEDIA_PREV_TRACK
 #define M_PLAY   KC_MEDIA_PLAY_PAUSE
 
-#define PERMISSIVE_HOLD
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
     KC_GRV,     KC_Q,    KC_W,    KC_F,     KC_P,   KC_B,         KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,  KC_SLSH,
-    KC_ESC,     KC_A,    KC_R,    KC_S,     KC_T,   KC_G,         KC_M,    KC_N,    KC_E,    KC_I,    KC_O,     KC_EXLM,
+    KC_HOME,    KC_A,    KC_R,    KC_S,     KC_T,   KC_G,         KC_M,    KC_N,    KC_E,    KC_I,    KC_O,     KC_EXLM,
     KC_LALT,    KC_Z,    KC_X,    KC_C,     KC_D,   KC_V,         KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_QUOT,  KC_BSLS,
-                KC_LBRC, KC_RBRC, KC_LSFT,  CTL_BSPC,                      ALT_SPC, SFT_ENT, KC_MINS, KC_EQL,
+                KC_LBRC, KC_RBRC, SFT_ESC,  CTL_BSPC,                      ALT_SPC, SFT_ENT, KC_MINS, KC_EQL,
                          OSL(3),  KC_TAB,   MO(1),                         OSL(3),  KC_DEL,  KC_LGUI
     ),
     [1] = LAYOUT(
@@ -29,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,    KC_Q,    KC_W,    KC_E,     KC_R,   KC_T,         KC_Y,    KC_U,    KC_I,     KC_O,    KC_P,     _______,
     _______,    KC_A,    KC_S,    KC_D,     KC_F,   KC_G,         KC_H,    KC_J,    KC_K,     KC_L,    KC_SCLN,  _______,
     _______,    KC_Z,    KC_X,    KC_C,     KC_V,   KC_B,         KC_N,    KC_M,    KC_COMM,  KC_DOT,  KC_QUOT,  _______,
-                KC_LBRC, KC_RBRC, KC_LSFT,  CTL_BSPC,                      ALT_SPC, SFT_ENT,  KC_MINS, KC_EQL,
+                KC_LBRC, KC_RBRC, SFT_ESC,  CTL_BSPC,                      ALT_SPC, SFT_ENT,  KC_MINS, KC_EQL,
                          MO(1),   KC_TAB,   OSL(3),                        KC_DEL,  KC_LGUI,  OSL(3)
 
     ),
